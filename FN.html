@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/89f6568896.js" crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+<!-- navbar -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">AI Lawyer</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+    
+<!-- Functional req -->
+
+    <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Functional Requirements</h3>
+
+                    <p class="w3-opacity"><i> Query Input </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">The user will submit a text string as a query to this unit.</p>
+                        </li>
+
+                    </ol>
+
+                    <p class="w3-opacity"><i> Query Handling </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">The unit will determine which words are crucial to the meaning of the
+                                text and replace
+                                them with generic equivalents that are preceded by an escape character.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">The sentence will be output by the unit as a string.</p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">If there is a mistake during this procedure, the generic inquiry
+                                couldn't be created
+                                correctly from the sentence. Send back a message saying, "Sorry, I didn't understand it"
+                                in this situation.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">The system will provide an example question after the text with the
+                                API response if a
+                                question is not understood by our API.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">Following a user's input, the chatbot should be able to choose or
+                                generate a response
+                                depending on that information and the conversation's context. The provided responses
+                                must make sense in the
+                                context inferred from the entry.
+
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">The system will reply to the user with the solution as a second text
+                                message after
+                                sending the user's text to the API.
+
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i> User Interface </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">A chat window on the GUI will show queries submitted to the system and
+                                API responses.
+
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">There will be a textbox on the GUI that can be filled in using
+                                keyboard inputs.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">The "Send" button on the GUI will, when clicked, send text from the
+                                textbox to the API.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">All of the queries and responses from the current session are
+                                displayed in the chat
+                                window, with a scroll bar available if necessary.
+
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i> Error Handling </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">The chat window will show an error message if there is a network
+                                issue.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">To prevent that small mistakes can affect the chatbot's comprehension,
+                                the application
+                                should activate the "auto-correct" feature when a user inputs a spelling mistake or
+                                makes a sentence-level
+                                error.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i> Integration </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">The chatbot should be coupled with a knowledge-based database and
+                                configured to swiftly
+                                retrieve information.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w3-justify">The chatbot should be integrated with a database of PPC (Pakistan
+                                Penal Code) and
+                                Constitution , to answer queries accordingly
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i>Technology </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">Python will be utilised as the programming language.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="w3-justify">All data needed to provide answers will be kept in a MySQL database.
+
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i> Updation </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">Periodically, updates to the database will take place, and those
+                                updates will prevent
+                                access to the API.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i> Language </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">Although the chatbot has to understand English in order to function,
+                                it should be
+                                thought about expanding the languages that are now supported in the future.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="w3-opacity"><i> Administration </i></p>
+                    <ol>
+                        <li>
+                            <p class="w3-justify">The administrator should be able to to add, update and delete
+                                questions, answers and
+                                keywords.
+
+                            </p>
+                        </li>
+                    </ol>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!-- Section: Contact -->
+    <section id="contact" class="section section-contact scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="row s12 m6">
+                    <div class="card-panel teal white-text center">
+                        <i class="material-icons medium">email</i>
+                        <h4><b>Wanna Talk?</b></h4>
+                        <p>Want to know more about this project? Please dont hesitate to send us an email</p>
+
+                        <a href="mailto:hiraamirbux@gmail.com"> <input type="submit" value="Send" class="btn"></a>
+                    </div>
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Contact Me</h5>
+                        </li>
+                        <li class="collection-item">hiraamirbux@gmail.com</li>
+                        <li class="collection-item">Jamshoro, Pakistan</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <br>
+    <!-- Footer -->
+    <footer class="section teal darken-2 white-text center">
+        <h6>Copyright: All rights reserved by Hira Amir &copy; 2022</h6>
+
+    </footer>
+
+
+</body>
